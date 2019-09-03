@@ -10,9 +10,12 @@
 			Description: {{product.description}}
 		</p>
 
-    <button (click)="share()"> 
+		<button (click)="share()"> 
       Share
     </button>
+
+    <app-product-alerts [product] = "product"
+    (notify)="onNotify()"> </app-product-alerts>
 	</h3>
 </div>
 <!-- 
